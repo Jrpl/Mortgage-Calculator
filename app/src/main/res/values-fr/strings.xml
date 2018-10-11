@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculateur d\'hypothèque</string>
+    <string name="purchase_price">"Entrer le prix d'achat "</string>
+    <string name="down_payment">"Entrer un acompte "</string>
+    <string name="interest_rate">"Entrez le taux d'intérêt "</string>
+    <string name="monthly_payment">"Paiement mensuel "</string>
+    <string name="total_payment">"Paiement total "</string>
+</resources>

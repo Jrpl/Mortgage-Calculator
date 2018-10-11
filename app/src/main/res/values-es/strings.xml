@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de hipoteca</string>
+    <string name="purchase_price">Ingrese el precio de compra</string>
+    <string name="down_payment">Ingrese el pago inicial</string>
+    <string name="interest_rate">Ingrese la tasa de interés</string>
+    <string name="monthly_payment">Mensualidad</string>
+    <string name="total_payment">Pago total</string>
+</resources>

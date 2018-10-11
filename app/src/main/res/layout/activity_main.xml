@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:columnCount="2"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <EditText
+        android:id="@+id/purchase_price_edit_text"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/purchase_price_text_view"
+        android:layout_alignTop="@+id/purchase_price_text_view"
+        android:digits="0123456789"
+        android:ems="10"
+        android:elevation="1dp"
+        android:inputType="number"
+        android:maxLength="11" />
+
+    <TextView
+        android:id="@+id/purchase_price_text_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/amount_background"
+        android:hint="@string/purchase_price"
+        android:padding="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/down_payment_edit_text"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/down_payment_text_view"
+        android:layout_alignEnd="@+id/purchase_price_edit_text"
+        android:digits="0123456789"
+        android:ems="10"
+        android:elevation="1dp"
+        android:inputType="number"
+        android:maxLength="11" />
+
+    <TextView
+        android:id="@+id/down_payment_text_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginEnd="-161dp"
+        android:layout_marginTop="75dp"
+        android:layout_toStartOf="@+id/purchase_price_edit_text"
+        android:background="@color/amount_background"
+        android:hint="@string/down_payment"
+        android:padding="12dp"
+        android:paddingTop="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/interest_rate_edit_text"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/purchase_price_edit_text"
+        android:layout_alignTop="@+id/interest_rate_text_view"
+        android:layout_marginEnd="-1dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:elevation="1dp"
+        android:inputType="number"
+        android:maxLength="11" />
+
+    <TextView
+        android:id="@+id/interest_rate_text_view"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="147dp"
+        android:background="@color/amount_background"
+        android:hint="@string/interest_rate"
+        android:padding="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/years_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/purchase_price_text_view"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginTop="219dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/years_seek_bar"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/purchase_price_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="221dp"
+        android:indeterminate="false"
+        android:max="30"
+        android:min="1"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/monthly_payment_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/monthly_payment_view"
+        android:layout_alignStart="@+id/years_text_view"
+        android:layout_gravity="end"
+        android:elevation="1dp"
+        android:paddingStart="10dp"
+        android:text="@string/monthly_payment"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/monthly_payment_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginEnd="-161dp"
+        android:layout_marginTop="275dp"
+        android:layout_toStartOf="@+id/purchase_price_edit_text"
+        android:layout_marginBottom="171dp"
+        android:background="@color/result_background"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/total_payment_text_view"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_payment_view"
+        android:layout_alignStart="@+id/years_text_view"
+        android:layout_gravity="end"
+        android:paddingStart="10dp"
+        android:elevation="1dp"
+        android:text="@string/total_payment"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/total_payment_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginEnd="-161dp"
+        android:layout_marginTop="350dp"
+        android:layout_toStartOf="@+id/purchase_price_edit_text"
+        android:layout_marginBottom="125dp"
+        android:background="@color/result_background"
+        android:gravity="center"
+        android:padding="12dp" />
+
+
+</RelativeLayout>

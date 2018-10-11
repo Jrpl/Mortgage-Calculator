@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="purchase_price">Enter Purchase Price</string>
+    <string name="down_payment">Enter Down Payment</string>
+    <string name="interest_rate">Enter Interest Rate</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="total_payment">Total Payment</string>
+</resources>
