@@ -1,4 +1,4 @@
-# mortgage-calculator
+# Mortgage-Calculator
 Mortgage Calculator for Android
 
 Calculates the Monthly Payment and Total Payment for a Mortgage based on the Purchase Price, Down Payment, Interest Rate, and number of Years.
